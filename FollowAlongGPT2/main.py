@@ -11,7 +11,7 @@ app = Flask(__name__)
 def index():
     if request.method == 'GET':
         return send_file('index.html')
-    data = request.form.get('text')
+    data = request.form.get('text_input')
     return extend(data)
 
 
